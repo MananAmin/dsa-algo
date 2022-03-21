@@ -13,3 +13,6 @@ So in KMP, We had only one string here we have multiple strings to search prefix
 ## Using only suffix links
 basically, Idea is same as KMP only difference is, here we follow suffix link of parents until we find transition to accept current char
 ![Aho Corasick](imgs/aho2.png)
+
+
+### Reference: https://youtu.be/w9-n3jW7q3s
