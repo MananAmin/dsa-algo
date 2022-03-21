@@ -5,16 +5,16 @@
 > prefix(abacab) = "ab"
 > prefix(ab) = ""
 
-### what if we want to finad all prefix fn of S?
+### what if we want to find all prefix fn(Strings) of S?
 
 > well if s1 = max prefix(S)
-  then s2 = prefix(s1) => prefix(prefix(S))
+  then s2(next largest prefix string after s1 ) = prefix(s1) => prefix(prefix(S))
 
 ### KMP algo:
 
 given S =>  calculate p[i] = prefix(S[0...i-1]) 
-
-> S =    a  b  b a  a  b  b  a  b 
+`
+> S =     a  b  b  a  a  b  b  a  b 
                                    
 > p = -1  0  0  0  1  1  2  3  4  2 
 
@@ -45,4 +45,6 @@ class KMP:
             
         return ret
 ```
-Ref: https://gist.github.com/m00nlight/daa6786cc503fde12a77
+Code Ref: https://gist.github.com/m00nlight/daa6786cc503fde12a77
+
+### Detailed Explanation: https://youtu.be/6t_1eRO-Cqo?list=PLrS21S1jm43igE57Ye_edwds_iL7ZOAG4&t=2671
